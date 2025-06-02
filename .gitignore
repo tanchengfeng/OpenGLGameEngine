@@ -37,3 +37,4 @@ Thumbs.db
 
 
 #说明：应该仅上传/assets, /engine, /runtime, /tests, CMakeLists.txt, .gitignore, .md资源
+#注意：空目录默认不会进行提交，所以先要提交的话，不妨写一个md文件
