@@ -1,0 +1,2 @@
+add_library(EngineAPI INTERFACE)
+target_include_directories(EngineAPI INTERFACE include)
