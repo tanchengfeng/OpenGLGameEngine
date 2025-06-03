@@ -2,7 +2,7 @@
 
 //本文件用于定义键位的枚举
 
-enum class KeyCode
+enum class KeySolid
 {
     Unknown = -1,
     W = 87,

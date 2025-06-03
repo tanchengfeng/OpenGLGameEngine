@@ -1,7 +1,7 @@
 #pragma once
 #include<string>
-#include "InputState.h"
-#include "InputBinding.h"
+#include "InputMetaState.h"
+#include "InputMetaBinding.h"
 
 // 行为映射：用于判断 "是否按下 Jump"、"是否释放 Fire" 等
 class ActionMap
