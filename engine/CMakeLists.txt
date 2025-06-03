@@ -10,6 +10,7 @@ add_subdirectory(Input)
 add_subdirectory(WindowGL)
 add_subdirectory(Physics)
 add_subdirectory(EngineAPI)
+add_subdirectory(Core)
 
 # 将各模块链接成 engine 库（可选）
 add_library(engine INTERFACE)
@@ -24,5 +25,15 @@ target_link_libraries(engine
         WindowGL
         Physics
         EngineAPI
+        Core
 )
+
+# 链接到目标图形库
+target_link_libraries(engine INTERFACE
+    OpenGL::GL
+    glfw
+    glad::glad
+    glm::glm
+)
+
 
