@@ -14,11 +14,11 @@ private:
 
 public:
     void SyncWithCamera();  //自动捕获所需的参数
-    virtual void Update(float frameElapsed) override;  //重写更新函数
+    virtual void UpdateEyeLine() override;  //重写更新函数
 
     //修改参数接口
-    void OnMouseMove(float deltaX, float deltaY, float frameElapsed);  //鼠标控制
-    void OnKeyboardInput(const InputStateInfo& keys, float frameElapsed);  //键位控制
+    void OnMouseMove(float deltaX, float deltaY, float frameElapsed);  //鼠标控制视线的目标
+    void OnKeyboardInput(const InputStateInfo& keys, float frameElapsed);  //键位控制摄像机的位置（仅限于摄像机为自由模式，不附在任何对象上）
     void SetYaw(float yaw);
     void SetPitch(float pitch);
     void SetSensitivity(float sensitivity);

@@ -12,6 +12,7 @@ add_subdirectory(Physics)
 add_subdirectory(EngineAPI)
 add_subdirectory(Core)
 add_subdirectory(Controller)
+add_subdirectory(Character)
 
 # 将各模块链接成 engine 库（可选）
 add_library(engine INTERFACE)
@@ -28,6 +29,7 @@ target_link_libraries(engine
         EngineAPI
         Core
         Controller
+        Character
 )
 
 # 链接到目标图形库

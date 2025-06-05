@@ -5,7 +5,8 @@ void CameraController::SetCamera(Camera* Cam)
 	m_Camera = Cam;
 }
 
-void CameraController::Update(float FrameElapsed)
+// 通过更新视线来更新投影矩阵
+void CameraController::UpdateEyeLine()
 {
 	return;
 }

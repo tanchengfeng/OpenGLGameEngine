@@ -10,8 +10,11 @@ private:
 
 public:
 	void SetCamera(Camera* Cam);  //可以随时切换代理
-	virtual void Update(float FrameElapsed) = 0;  //通常涉及到旋转或者移动的更新逻辑都要考虑一帧的持续时间，避免不同刷新率的设备在单位时间为造成的位移不一致
+
+	//通过更新视线来更新投影矩阵
+	virtual void UpdateEyeLine() = 0;  //视线永远是单位向量，不直接和帧持续时间相关
 
 	//访问接口
 	Camera* GetCamera();
 };
+
