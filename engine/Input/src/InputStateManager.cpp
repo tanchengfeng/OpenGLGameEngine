@@ -1,4 +1,6 @@
 #include "InputStateManager.h"
+#include "Keys.h"
+#include "MouseButtons.h"
 #include <cassert>
 
 // 构造函数注入窗口
@@ -37,7 +39,7 @@ void InputStateManager::UpdateState()
     for (int i = GLFW_KEY_SPACE; i <= GLFW_KEY_LAST; ++i)   //遍历所有的键位，其中32~96为基本键的键码，256~348是功能键键码，并且键码不一定连续分布
     {
         int state = glfwGetKey(glfwWindow, i);  //glfw库提供的获取函数【硬件到程序】
-        MouseButton key = static_cast<Key>(i);
+        Key key = static_cast<Key>(i);
         m_NewStateInfo.keyStateMap.at(key).down = (state == GLFW_PRESS || state == GLFW_REPEAT);  //glfw库提供两种基本的状态，瞬间按下和瞬间松开
     }
 

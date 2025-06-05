@@ -1,4 +1,5 @@
 #include "Controller/CharacterController.h"
+#define GLM_ENABLE_EXPERIMENTAL
 #include <glm/gtx/norm.hpp>  // 用于 length2 优化平方距离计算
 
 //绑定人物

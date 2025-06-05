@@ -15,5 +15,5 @@ find_package(glm CONFIG REQUIRED)
 
 # ✅ 传入给所有子项目
 add_subdirectory(engine)
-
+add_subdirectory(runtime)
 

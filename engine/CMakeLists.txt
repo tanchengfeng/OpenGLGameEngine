@@ -39,5 +39,3 @@ target_link_libraries(engine INTERFACE
     glad::glad
     glm::glm
 )
-
-
