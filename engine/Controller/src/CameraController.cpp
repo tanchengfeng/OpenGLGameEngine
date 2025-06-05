@@ -1,4 +1,4 @@
-#include "CameraController/CameraController.h"
+#include "Controller/CameraController.h"
 
 void CameraController::SetCamera(Camera* Cam)
 {

@@ -1,4 +1,4 @@
-#include "CameraController/FirstPersonCameraController.h"
+#include "Controller/FirstPersonCameraController.h"
 
 
 void FirstPersonCameraController::SyncWithCamera() 
@@ -26,7 +26,7 @@ void FirstPersonCameraController::OnMouseMove(float deltaX, float deltaY, float 
 {
 	//Ô¤Áô
 }
-void FirstPersonCameraController::OnKeyboardInput(const InputState& keys, float frameElapsed)
+void FirstPersonCameraController::OnKeyboardInput(const InputStateInfo& keys, float frameElapsed)
 {
 	//Ô¤Áô
 }

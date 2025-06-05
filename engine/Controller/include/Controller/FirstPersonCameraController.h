@@ -1,8 +1,8 @@
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
-#include "CameraController/CameraController.h"
-#include "InputMetaState.h"
+#include "CameraController.h"
+#include "InputStateInfo.h"
 
 class FirstPersonCameraController :public CameraController
 {
@@ -18,7 +18,7 @@ public:
 
     //修改参数接口
     void OnMouseMove(float deltaX, float deltaY, float frameElapsed);  //鼠标控制
-    void OnKeyboardInput(const InputState& keys, float frameElapsed);  //键位控制
+    void OnKeyboardInput(const InputStateInfo& keys, float frameElapsed);  //键位控制
     void SetYaw(float yaw);
     void SetPitch(float pitch);
     void SetSensitivity(float sensitivity);
